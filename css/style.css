@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    box-sizing: border-box;    
+    margin: 0px;
+    padding: 0px;
+
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    align-items: center;
+    
+   /*to fix nav bar psition while scrolling*/ 
+    height: 12px;
+   position: sticky;
+    top: 0; 
+    background-color: rgb(0,0,0,0.8);
+    z-index: +1;
+
+}
+
+li,a{
+    font-family: "Montserrat", sans-serif;
+    font-weight:500;
+    font-size:16px;
+    color: beige;
+    text-decoration: none;
+   
+}
+
+#header-img{
+    cursor: pointer;
+   height: 100px;
+    
+    
+    
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu li{
+    display:inline-block;
+   min-width: inherit;
+    margin:0 0;
+    
+    padding: 0px 20px;
+}
+
+.menu li a{
+    transition: all 0.3s ease 0;
+}
+
+.menu li a:hover{
+    color: #15acda;
+}
+/*
+.h-content{
+    background-color:#141414;
+     font-family: "Montserrat", sans-serif;
+    font-weight:500;
+    font-size:40px;
+    margin-top: 200px;
+    margin-right: 800px;
+    color: azure;
+    padding-left: 40px;
+}
+
+.h-image{
+    padding-left: 900px;
+    height: 800px;
+
+}
+*/
+
+
+#home{
+      display: flex;
+    justify-content:space-around;
+    background-image: url("https://previews.123rf.com/images/hanumarn/hanumarn1802/hanumarn180200042/95621204-half-white-and-blue-or-green-paper-textured-background-.jpg");
+    background-size: cover;
+}
+
+
+.text{
+  display: inline-block;
+    text-align: left;
+  font-family: 'Kanit', sans-serif;
+    font-weight:500;
+    font-size:25px;
+ color: black;
+    border-radius: 50px;margin-right: 505px;
+    padding-left: 20px;
+}
+
+.text h1{
+    border-bottom: 5px black solid;
+}
+
+.text p{
+    opacity: 1;
+    
+}
+
+.text p:hover{background-color: black;
+    
+    color: cornflowerblue;
+   
+   
+    transition-duration: 0.5s;
+    cursor: default; font-weight: 400;
+}
+.h-image{
+   position: relative;
+   
+    top: -190px;
+    right: 361px;
+  
+    width: 201%;
+
+}
+
+.jogel{
+    font-family: 'Anton', sans-serif;
+    font-size: 100px;
+    text-align: right;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    
+    
+}
+
+ #about{
+       background-image: url("data:image/jpeg;base64,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");
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       backdrop-filter: blur(5px);
+       width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;justify-content: center;
+overflow: hidden;
+
+
+    
+    }
+    .card{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "image" "text";
+    
+    font-family: monospace;
+    
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    
+    transition: 0.5s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.card-image1, .card-image2, .card-image3{
+    grid-area: image;
+  justify-self: center;
+  align-self: center;
+  max-width: 100px;
+  height: auto;
+  
+}
+    
+    
+
+.card-image1 img, .card-image2 img, .card-image3 img{
+    width: 158px;
+height: 177px;
+padding-right: 47px;
+}
+
+.card-text{
+     font-family: 'Kanit', sans-serif;
+    font-size: 10px;
+    grid-area: text;
+    margin: 30px;
+}
+
+.card-text h1{
+    border-top: 5px solid black;
+}
+
+.card:hover{
+    background: dodgerblue;
+ color: black;
+    font-weight: 600;
+    
+  
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+   
+  
+#last {
+    background: url("https://previews.123rf.com/images/liaaramburu/liaaramburu1804/liaaramburu180400152/100072005-wall-background-painted-half-blue-and-half-white-.jpg");
+    background-size: cover;
+    height: 800px;
+}
+
+#back{
+    
+}
+#subscribe{
+    display: inline-block;
+    background: black;
+    margin: 0 300px;
+    opacity: 0.7;
+    margin-top: 20px;
+      box-shadow: 5px 5px 15px rgba(0,0,0,1);
+}
+
+#subscribe h1{
+   color: floralwhite;
+    padding: 40px 40px;
+    font-size: 60px;
+     font-family: monospace;
+    
+}
+
+
+
+
+#subscribe:hover{
+ opacity: 1;
+    color: aqua;
+ 
+ 
+}
+
+
+.email{
+    margin-left: 50px;
+    margin-bottom: 100px;
+    height: 30px;
+    width: 60%;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid lightblue;
+    border-radius: 10px;
+    background-color: transparent;
+    color: aliceblue;
+}
+
+#submit{
+     height: 40px;
+    width: 150px;
+    font-size: 20px;
+    border: 2px solid #3e653e;
+    background-color: darkgreen;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+#submit:hover{
+    background-color: greenyellow;
+    text-transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+#video{
+ 
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+
+    
+     <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" placeholder="enter your email" id="email"/>
+                <input type="submit" id="submit" value="Submit" name="submit" />
+            </form>
+            
+  
